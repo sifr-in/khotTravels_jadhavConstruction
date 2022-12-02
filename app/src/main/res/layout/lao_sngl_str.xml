@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7sp"
+    android:background="@drawable/bg_rounded_faint"
+    android:orientation="horizontal"
+    android:padding="7sp">
+
+    <TextView
+        android:id="@+id/lao_sngl_str_tv_sr"
+        android:layout_width="33sp"
+        android:layout_height="33sp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <RadioButton
+        android:id="@+id/lao_sngl_str_rb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="@string/vec_no"
+        android:textSize="18sp" />
+</LinearLayout>

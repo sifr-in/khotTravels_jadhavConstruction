@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="11sp"
+    tools:context=".Activity2crudEmp">
+
+    <LinearLayout
+        android:id="@+id/act_2crud_emp_ll_vx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11sp"
+        android:layout_marginBottom="11sp"
+        android:background="#2200FF00"
+        android:orientation="vertical"
+        android:paddingStart="11sp"
+        android:paddingEnd="11sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="7sp"
+                android:text="@string/sel_i"
+                android:textColor="#228B22"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/act_2crud_emp_iv_vf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="22sp"
+                android:paddingTop="7sp"
+                android:paddingRight="7sp"
+                android:paddingBottom="7sp"
+                app:srcCompat="@drawable/ic_baseline_settings_24" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal"
+            android:paddingStart="11sp"
+            android:paddingEnd="11sp">
+
+            <RadioButton
+                android:id="@+id/act_2crud_emp_rb_v"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/indi" />
+
+            <RadioButton
+                android:id="@+id/act_2crud_emp_rb_u"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/enti" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/act_2crud_emp_ll_vco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11sp"
+            android:background="#2200FF00"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/act_2crud_emp_ccod_vc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    app:ccp_clickable="false"
+                    app:ccp_defaultNameCode="IN"
+                    app:ccp_hintExampleNumber="true"
+                    app:ccp_hintExampleNumberType="FIXED_LINE" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:hint="@string/mo_no"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/act_2crud_emp_met_vo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:digits="1234567890"
+                        android:inputType="phone"
+                        android:maxLength="10" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/ful_nm"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/act_2crud_emp_met_vn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:inputType="textPersonName"
+                    android:maxLength="32" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/act_2crud_emp_cb_u"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/undr_enti" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/act_2crud_emp_ll_uco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5500FF00"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/act_2crud_emp_ccod_uc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                app:ccp_clickable="false"
+                app:ccp_defaultNameCode="IN"
+                app:ccp_hintExampleNumber="true"
+                app:ccp_hintExampleNumberType="FIXED_LINE" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="6"
+                android:hint="@string/mo_no"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/act_2crud_emp_met_uo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:digits="1234567890"
+                    android:inputType="phone"
+                    android:maxLength="10" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/act_2crud_emp_et_g"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autofillHints="@string/enti_no"
+                android:digits="123456789"
+                android:focusable="false"
+                android:inputType="number"
+                android:text="1"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/act_2crud_emp_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11sp"
+        android:layout_marginEnd="11sp"
+        android:text="@string/addEmp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="11dp"
+    cardView:cardCornerRadius="11dp"
+    cardView:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/la_sngl_buttn_usr_dtls_tv_yn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5503D005"
+            android:padding="7sp"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5503DAC5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/la_sngl_buttn_usr_dtls_tv_yc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="7sp"
+                android:textSize="22sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:hint="@string/mo_no"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/la_sngl_buttn_usr_dtls_te_yo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:digits="1234567890"
+                    android:hint="@string/mo_no"
+                    android:inputType="phone"
+                    android:maxLength="10" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/la_sngl_buttn_usr_dtls_main_tv_dt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dttt"
+            android:padding="7sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#f3aef6"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_faint"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="7sp"
+                        android:text="create"
+                        android:textSize="22sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/la_sngl_buttn_usr_dtls_prmc"
+                        android:layout_width="44sp"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:gravity="end"
+                        android:hint="pr"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_faint"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="7sp"
+                        android:text="read"
+                        android:textSize="22sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/la_sngl_buttn_usr_dtls_prmr"
+                        android:layout_width="44sp"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:gravity="end"
+                        android:hint="pr"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_faint"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="7sp"
+                        android:text="update"
+                        android:textSize="22sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/la_sngl_buttn_usr_dtls_prmu"
+                        android:layout_width="44sp"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:gravity="end"
+                        android:hint="pr"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_faint"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="7sp"
+                        android:text="delete"
+                        android:textSize="22sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/la_sngl_buttn_usr_dtls_prmd"
+                        android:layout_width="44sp"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:gravity="end"
+                        android:hint="pr"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/la_sngl_buttn_usr_dtls_main_tv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="9sp"
+            android:text="@string/upd" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

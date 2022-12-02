@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="11sp"
+        tools:context=".Whom2Work4">
+
+        <LinearLayout
+            android:id="@+id/act_for_whom2_ll_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#22B5ADDC"
+            android:orientation="vertical"
+            android:paddingStart="11sp"
+            android:paddingEnd="11sp">
+
+            <LinearLayout
+                android:id="@+id/act_for_whom2_ll_mf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#55B5ADDC"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/act_for_whom2_ccod_mfc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    app:ccp_clickable="false"
+                    app:ccp_defaultNameCode="IN"
+                    app:ccp_hintExampleNumber="true"
+                    app:ccp_hintExampleNumberType="FIXED_LINE" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="6"
+                    android:hint="@string/mo_no"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/act_for_whom2_met_mfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:digits="1234567890"
+                        android:inputType="phone"
+                        android:maxLength="10" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <EditText
+                    android:id="@+id/act_for_whom2_et_mfe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/enti_no"
+                    android:digits="123456789"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/act_for_whom2_ll_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="7sp"
+                    android:text="@string/sel_e"
+                    android:textColor="#835C3B"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/act_for_whom2_iv_mf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="22sp"
+                    android:paddingTop="7sp"
+                    android:paddingRight="7sp"
+                    android:paddingBottom="7sp"
+                    app:srcCompat="@drawable/ic_baseline_settings_24" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/act_for_whom2_ll_rb_m"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:layout_weight="7"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/act_for_whom2_rb_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/indi" />
+
+                    <RadioButton
+                        android:id="@+id/act_for_whom2_rb_e"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/enti" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/act_for_whom2_et_e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/enti_no"
+                    android:digits="1234567890"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/act_for_whom2_iv_xp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="22sp"
+                    android:paddingRight="7sp"
+                    app:srcCompat="@drawable/ic_baseline_chevron_right_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/act_for_whom2_ccod_mc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    app:ccp_clickable="false"
+                    app:ccp_defaultNameCode="IN"
+                    app:ccp_hintExampleNumber="true"
+                    app:ccp_hintExampleNumberType="FIXED_LINE" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:hint="@string/mo_no"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/act_for_whom2_met_mo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:digits="1234567890"
+                        android:inputType="phone"
+                        android:maxLength="10" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11sp"
+            android:layout_marginBottom="11sp"
+            android:background="#2200FF00"
+            android:orientation="vertical"
+            android:paddingStart="11sp"
+            android:paddingEnd="11sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="7sp"
+                    android:text="@string/sel_i"
+                    android:textColor="#228B22"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/act_for_whom2_iv_vf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="22sp"
+                    android:paddingTop="7sp"
+                    android:paddingRight="7sp"
+                    android:paddingBottom="7sp"
+                    app:srcCompat="@drawable/ic_baseline_settings_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/act_for_whom2_ll_vf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5500FF00"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/act_for_whom2_ccod_vfc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    app:ccp_clickable="false"
+                    app:ccp_defaultNameCode="IN"
+                    app:ccp_hintExampleNumber="true"
+                    app:ccp_hintExampleNumberType="FIXED_LINE" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="6"
+                    android:hint="@string/mo_no"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/act_for_whom2_met_vfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:digits="1234567890"
+                        android:inputType="phone"
+                        android:maxLength="10" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <EditText
+                    android:id="@+id/act_for_whom2_et_vfg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/enti_no"
+                    android:digits="123456789"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/act_for_whom2_rg_vf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="11sp"
+                android:paddingEnd="11sp">
+
+                <RadioButton
+                    android:id="@+id/act_for_whom2_rb_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/indi" />
+
+                <RadioButton
+                    android:id="@+id/act_for_whom2_rb_u"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/enti" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/act_for_whom2_ll_vco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2200FF00"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/act_for_whom2_ccod_vc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        app:ccp_clickable="false"
+                        app:ccp_defaultNameCode="IN"
+                        app:ccp_hintExampleNumber="true"
+                        app:ccp_hintExampleNumberType="FIXED_LINE" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:hint="@string/mo_no"
+                        app:endIconMode="clear_text"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/act_for_whom2_met_vo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5sp"
+                            android:digits="1234567890"
+                            android:inputType="phone"
+                            android:maxLength="10" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/act_for_whom2_cb_u"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="@string/undr_enti" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/act_for_whom2_ll_uco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5500FF00"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/act_for_whom2_ccod_uc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    app:ccp_clickable="false"
+                    app:ccp_defaultNameCode="IN"
+                    app:ccp_hintExampleNumber="true"
+                    app:ccp_hintExampleNumberType="FIXED_LINE" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="6"
+                    android:hint="@string/mo_no"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/act_for_whom2_met_uo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:digits="1234567890"
+                        android:inputType="phone"
+                        android:maxLength="10" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <EditText
+                    android:id="@+id/act_for_whom2_et_g"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/enti_no"
+                    android:digits="123456789"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/act_for_whom2_cb_remem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/remem" />
+
+            <Button
+                android:id="@+id/act_for_whom2_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/iwwfthis" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="33sp"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/act_reg_la_pb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/act_reg_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:max="48"
+            android:progress="45"
+            android:progressDrawable="@drawable/circular_progress_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/vrfyB4"
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:id="@+id/act_reg_tv_pb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="33sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/act_reg_la_vrfy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/act_reg_et_la_otp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/otp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            tools:layout_editor_absoluteX="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/act_reg_et_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:digits="1234567890"
+                android:gravity="center"
+                android:inputType="number"
+                android:letterSpacing="0.1"
+                android:maxLength="6"
+                android:textSize="44sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/act_reg_btn_veri_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/veri_otp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/act_reg_la_pi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="9sp"
+            android:gravity="center"
+            android:padding="7sp"
+            android:text="@string/nw_lgn" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/act_reg_rc_profi"
+            android:layout_width="match_parent"
+            android:layout_height="111sp"
+            android:background="#ececec"
+            android:entries="@array/arrBlank"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <EditText
+            android:id="@+id/act_reg_tvpi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="22sp"
+            android:autofillHints="@string/setpi"
+            android:gravity="center"
+            android:hint="@string/setpi"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/act_reg_btn_set_pi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setpi" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/act_reg_tv_yc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="9sp"
+        android:padding="7sp"
+        android:text="@string/only_for_in"
+        android:textColor="#FF0000" />
+
+    <LinearLayout
+        android:id="@+id/act_prty_eorm_dtls_ll_ucuo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="11sp"
+        android:paddingEnd="11sp">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/act_reg_yc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            app:ccp_defaultNameCode="IN"
+            app:ccp_hintExampleNumber="true"
+            app:ccp_hintExampleNumberType="FIXED_LINE" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:hint="@string/mo_no"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/act_reg_yo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:digits="1234567890"
+                android:inputType="phone"
+                android:maxLength="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/act_reg_la_get_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="7sp"
+            android:text="@string/veriOtpSetPin"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="9sp"
+            android:padding="7sp"
+            android:text="@string/infoLater"
+            android:textColor="#008000" />
+
+        <Button
+            android:id="@+id/act_reg_btn_get_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_otp" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

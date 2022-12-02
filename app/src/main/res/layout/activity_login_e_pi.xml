@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="22sp"
+    android:paddingTop="11sp"
+    android:paddingEnd="33sp"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="9sp"
+        android:text="@string/nw_lgn"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/act_lgi_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="9sp"
+        android:gravity="center"
+        android:text="@string/nw_lgn"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="9sp"
+        android:gravity="center"
+        android:padding="7sp"
+        android:text="@string/nw_lgn_m" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/act_log_rc_profi"
+        android:layout_width="match_parent"
+        android:layout_height="111sp"
+        android:background="#ececec"
+        android:entries="@array/arrBlank"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11sp"
+        android:orientation="horizontal"
+        tools:context=".SeatBookerActivity">
+
+        <EditText
+            android:id="@+id/act_log_tvpi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="33sp"
+            android:layout_weight="1"
+            android:autofillHints="@string/setpi"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/setpi"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textSize="33sp" />
+
+        <Button
+            android:id="@+id/act_log_btn_chk_pi_get_tk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lgn" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
