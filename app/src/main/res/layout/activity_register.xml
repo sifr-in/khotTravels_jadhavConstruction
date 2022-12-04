@@ -8,6 +8,7 @@
     android:padding="33sp"
     tools:context=".RegisterActivity">
 
+
     <LinearLayout
         android:id="@+id/act_reg_la_pb"
         android:layout_width="match_parent"

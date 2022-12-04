@@ -284,10 +284,11 @@ public class SeatBookerActivity extends AppCompatActivity {
                                                         "\nसीट नं: *" + mact_seat_booker_tv_seats.getText().toString() + "*" +
                                                         "\nएकूण रक्कम ₹: *" + pModel4VehicleSeatsLst.getK() + "*" +
                                                         "\nयेणे रक्कम ₹: *" + mact_seat_booker_tv_rmna.getText().toString() + "*" +
-                                                        "\n\nआमचा गूगल पे नं 7758957896" +
+                                                        "\n\nआमचा गूगल पे नं 9420732715" +
                                                         "\nआपल्या सेवेसाठी सदैव तत्पर" +
                                                         "\nस्मार्ट बस" +
-                                                        "\nधन्यवाद";
+                                                        "\nधन्यवाद." +
+                                                        "\n\nगाडीचं Live लोकेशन बघण्यासाठी खालील लिंक वर क्लीक करा";
 
                                                         /*"असं क्रमांक : " + mact_seat_booker_tv_seats.getText().toString() +
                                                         " तुमच्यासाठी आरक्षित केल्या गेल्या आहेत." +
